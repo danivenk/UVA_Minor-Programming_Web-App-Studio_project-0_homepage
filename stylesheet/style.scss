@@ -1,3 +1,13 @@
+/* Dani van Enk, 11823526 */
+
+/* predefining carousel color */
+$carousel-color: #AAA!important;
+
+/* alignment inheritance */
+%alignment {
+    text-align: center;
+}
+
 /* container style */
 #container {
     margin: 0 10% 0 10%;
@@ -24,7 +34,7 @@
     }
     
     h2 {
-        text-align: center;
+        @extend %alignment;
         margin: 3% 0;
     }
 
@@ -33,30 +43,30 @@
     }
 
     .carousel-indicators li {
-        background-color: #AAA!important;
+        background-color: $carousel-color;
     }
     
     .carousel-control-prev-icon {
-        background-color: #AAA!important;
+        background-color: $carousel-color;
     }
 
     .carousel-control-next-icon {
-        background-color: #AAA!important;
+        background-color: $carousel-color;
     }
 
     .row {
         margin-top: 2%;
         margin-bottom: 2%;
+
+        img {
+            width: 40%;
+            float: left;
+            margin: 0 5%;
+        }
     }
 
     .protagonist div {
         margin: 1% 0;
-    }
-
-    .row img {
-        width: 40%;
-        float: left;
-        margin: 0 5%;
     }
 
     .type {
@@ -64,7 +74,7 @@
     }
 
     footer {
-        text-align: center;
+        @extend %alignment;
         left: 0;
         bottom: 0;
         width: 100%;
@@ -81,13 +91,15 @@
         padding-bottom: 5%;
     }
 
-    .row img {
-        width: 90%;
-        margin: 0 5% 1% 5%;
-    }
+    .row {
+        img {
+            width: 90%;
+            margin: 0 5% 1% 5%;
+        }
 
-    .row .img {
-        max-width: 100%!important;
-        flex: 0 0 100%!important;
+        .img {
+            max-width: 100%!important;
+            flex: 0 0 100%!important;
+        }
     }
 }

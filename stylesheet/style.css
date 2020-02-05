@@ -1,3 +1,10 @@
+/* Dani van Enk, 11823526 */
+/* predefining carousel color */
+/* alignment inheritance */
+footer, h2 {
+  text-align: center;
+}
+
 /* container style */
 #container {
   margin: 0 10% 0 10%;
@@ -24,7 +31,6 @@ nav {
 }
 
 h2 {
-  text-align: center;
   margin: 3% 0;
 }
 
@@ -48,15 +54,14 @@ h4 {
   margin-top: 2%;
   margin-bottom: 2%;
 }
-
-.protagonist div {
-  margin: 1% 0;
-}
-
 .row img {
   width: 40%;
   float: left;
   margin: 0 5%;
+}
+
+.protagonist div {
+  margin: 1% 0;
 }
 
 .type {
@@ -64,7 +69,6 @@ h4 {
 }
 
 footer {
-  text-align: center;
   left: 0;
   bottom: 0;
   width: 100%;
@@ -85,7 +89,6 @@ footer {
     width: 90%;
     margin: 0 5% 1% 5%;
   }
-
   .row .img {
     max-width: 100% !important;
     flex: 0 0 100% !important;
