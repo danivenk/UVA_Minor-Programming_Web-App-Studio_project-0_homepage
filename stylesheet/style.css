@@ -1,0 +1,129 @@
+/* Dani van Enk, 11823526 */
+/* predefining some mulitple used colors */
+/* alignment inheritance */
+footer, h2 {
+  text-align: center;
+}
+
+/* text color inheritance */
+ul li a:hover, ul li a {
+  color: #000;
+}
+
+/* button border color inheritance */
+.btn-primary:hover, .btn-primary, .btn-primary:active, .btn-primary:focus {
+  border-color: #bb0050 !important;
+}
+
+/* button when clicked inheritance */
+.btn-primary:active, .btn-primary:focus {
+  background-color: #ca0057 !important;
+  box-shadow: 0 0 0 0.2rem rgba(255, 34, 129, 0.5) !important;
+}
+
+/* container style */
+#container {
+  margin: 0 10% 0 10%;
+  box-shadow: 0 0 10px #444;
+  height: 100%;
+  padding: 0;
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+/* nav style */
+nav {
+  background-color: #E06;
+}
+
+.nav-link:hover {
+  color: #FFF !important;
+}
+
+/* content style */
+.container {
+  flex: 1;
+}
+
+h2 {
+  margin: 3% 0;
+}
+
+h4 {
+  font-weight: bold;
+}
+
+.carousel-indicators li {
+  background-color: #AAA !important;
+}
+
+.carousel-control-prev-icon {
+  background-color: #AAA !important;
+}
+
+.carousel-control-next-icon {
+  background-color: #AAA !important;
+}
+
+.row {
+  margin-top: 2%;
+  margin-bottom: 2%;
+}
+.row img {
+  width: 40%;
+  float: left;
+  margin: 0 5%;
+}
+
+ul li {
+  list-style-type: none;
+}
+#table {
+  display: none;
+}
+
+.btn-primary {
+  background-color: #E06;
+}
+
+.btn-primary:hover {
+  background-color: #d5005b;
+}
+
+.protagonist div {
+  margin: 1% 0;
+}
+
+.type {
+  font-weight: bold;
+}
+
+footer {
+  left: 0;
+  bottom: 0;
+  width: 100%;
+}
+
+/* mobile style changes */
+@media screen and (max-device-width: 768px) {
+  #container {
+    margin: 0;
+  }
+
+  .nav-link {
+    padding-top: 5%;
+    padding-bottom: 5%;
+  }
+
+  .row img {
+    width: 90%;
+    margin: 0 5% 2% 5%;
+  }
+  .row .img {
+    max-width: 100% !important;
+    flex: 0 0 100% !important;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

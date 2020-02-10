@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+
+<html lang="ja-jp">
+    <head>
+        <!-- declaration of the page title, charset -->
+        <title lang="en">Project 0 - Home</title>
+        <meta charset="UTF-8">
+
+        <!-- bootstrap inclusion -->
+        <meta name="viewport"
+            content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link rel="stylesheet"
+            href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+            integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+            crossorigin="anonymous">
+        
+        <!-- icon inclusion -->
+        <link rel="icon" href="img/icon.jpg">
+
+        <!-- style and js inclusion -->
+        <link href="stylesheet/style.css" rel="stylesheet">
+        <script src="js/script.js">
+        </script>
+    </head>
+    <body>
+        <!-- container of the page -->
+        <div id="container">
+
+            <!-- place holder for the navbar js will include the nav here -->
+            <nav class="navbar navbar-light navbar-expand-lg" id="nav"></nav>
+
+            <!-- content of the page -->
+            <div class="container">
+                <!-- header title -->
+                <h2 lang="en">
+                    第2 MProg賞の結果
+                </h2>
+
+                <!-- carousel with nominees
+                    carousel taken from: https://getbootstrap.com/docs/4.0/components/carousel/#with-controls -->
+                <div id="carouselExampleIndicators" class="carousel slide"
+                    data-ride="carousel">
+                    <!-- carousel indicators -->
+                    <ol class="carousel-indicators">
+                        <li data-target="#carouselExampleIndicators"
+                            data-slide-to="0" class="active"></li>
+                        <li data-target="#carouselExampleIndicators"
+                            data-slide-to="1"></li>
+                        <li data-target="#carouselExampleIndicators"
+                            data-slide-to="2"></li>
+                    </ol>
+                    <!-- carousel slides 
+                        images from https://www.hulu.jp/-->
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <a href="page1.html">
+                                <img class="d-block w-100"
+                                    src="img/Harukana-Recieve-slide.jpg"
+                                    alt="Harukana Recieve">
+                            </a>
+                        </div>
+                        <div class="carousel-item">
+                            <a href="page2.html">
+                                <img class="d-block w-100"
+                                    src="img/Yuyushiki-slide.jpg"
+                                    alt="Yuyushiki">
+                            </a>
+                        </div>
+                        <div class="carousel-item">
+                            <a href="page3.html">
+                                <img class="d-block w-100"
+                                    src="img/Gochumon-wa-Usagi-desu-ka-slide.jpg"
+                                    alt="Gochumon wa Usagi desu ka">
+                            </a>
+                        </div>
+                    </div>
+                    <!-- perv/next buttons -->
+                    <a class="carousel-control-prev"
+                        href="#carouselExampleIndicators" role="button"
+                        data-slide="prev">
+                        <span class="carousel-control-prev-icon"
+                            aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next"
+                        href="#carouselExampleIndicators" role="button"
+                        data-slide="next">
+                        <span class="carousel-control-next-icon"
+                            aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
+                
+                <!-- intro -->
+                <div class="row col-sm-12">
+                    今回のMProg賞の結果を発表された、三つの候補者から陪審が選べました。<br>
+                    候補者は：
+                </div>
+                <ul>
+                    <li>
+                        <a href="page1.html">はるかなレシーブ</a>
+                    </li>
+                    <li>
+                        <a href="page2.html">ゆゆ式</a>
+                    </li>
+                    <li>
+                        <a href="page3.html">ご注文はうさぎですか？</a>
+                    </li>
+                </ul>
+
+                <!-- results
+                    got button from: https://getbootstrap.com/docs/4.1/components/buttons/
+                    got table from: https://getbootstrap.com/docs/4.1/content/tables/ -->
+                <button class="btn btn-primary" type="button" id="button">結果表示</button>
+                <div class="row col-sm-6">
+                    <table class="table hide" id="table">
+                        <tbody>
+                            <tr>
+                                <th scope="row">1</th>
+                                <td>はるかなレシーブ</td>
+                                <td>スコア：97点</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">2</th>
+                                <td>ゆゆ式</td>
+                                <td>スコア：92点</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">3</th>
+                                <td>ご注文はうさぎですか？</td>
+                                <td>スコア：87点</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+                
+            <!-- footer of the page -->
+            <footer>Dani van Enk, Hakkajiten 2020</footer>
+        </div>
+
+        <!-- bootstrap scripts inclusion -->
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+            integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+            crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+            integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+            crossorigin="anonymous"></script>
+        <script
+            src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+            integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+            crossorigin="anonymous"></script>
+    </body>
+</html>
