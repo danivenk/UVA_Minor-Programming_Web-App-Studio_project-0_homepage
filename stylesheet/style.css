@@ -1,8 +1,19 @@
 /* Dani van Enk, 11823526 */
-/* predefining carousel color */
+/* predefining some mulitple used colors */
 /* alignment inheritance */
 footer, h2 {
   text-align: center;
+}
+
+/* button border color inheritance */
+.btn-primary:hover, .btn-primary, .btn-primary:active, .btn-primary:focus {
+  border-color: #bb0050 !important;
+}
+
+/* button when clicked inheritance */
+.btn-primary:active, .btn-primary:focus {
+  background-color: #ca0057 !important;
+  box-shadow: 0 0 0 0.2rem rgba(255, 34, 129, 0.5) !important;
 }
 
 /* container style */
@@ -60,8 +71,16 @@ h4 {
   margin: 0 5%;
 }
 
-.table {
+#table {
   display: none;
+}
+
+.btn-primary {
+  background-color: #E06;
+}
+
+.btn-primary:hover {
+  background-color: #d5005b;
 }
 
 .protagonist div {

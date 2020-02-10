@@ -33,11 +33,11 @@ function init()
 
     // add eventlistener to the button to show/hide the table
     show_button.addEventListener("click", function() {
-        if (table.style.display == "none") {
-            table.style.display = "block";
+        if (table.style.display === "block") {
+            table.style.display = "none";
         }
         else {
-            table.style.display = "none";
+            table.style.display = "block";
         }
     });
 }
