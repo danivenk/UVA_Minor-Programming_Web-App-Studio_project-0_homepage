@@ -26,6 +26,20 @@ function init()
 
     // set push nav_content into nav_element
     nav_element.innerHTML = nav_content;
+
+    // defines the button and table on index.html
+    var show_button = document.querySelector("#button");
+    var table = document.querySelector("#table");
+
+    // add eventlistener to the button to show/hide the table
+    show_button.addEventListener("click", function() {
+        if (table.style.display == "none") {
+            table.style.display = "block";
+        }
+        else {
+            table.style.display = "none";
+        }
+    });
 }
 // make sure DOMContent is loaded before the code runs
 document.addEventListener("DOMContentLoaded", init, false);
