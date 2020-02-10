@@ -10,6 +10,11 @@ $main-color: #E06;
     text-align: center;
 }
 
+/* text color inheritance */
+%black {
+    color: #000;
+}
+
 /* button border color inheritance */
 %button_border {
     border-color: darken( $main-color, 10%)!important;
@@ -76,6 +81,18 @@ $main-color: #E06;
             width: 40%;
             float: left;
             margin: 0 5%;
+        }
+    }
+
+    ul li {
+        list-style-type: none;
+        
+        a {
+            @extend %black;
+        }
+
+        a:hover{
+            @extend %black;
         }
     }
 

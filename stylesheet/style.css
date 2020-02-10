@@ -5,6 +5,11 @@ footer, h2 {
   text-align: center;
 }
 
+/* text color inheritance */
+ul li a:hover, ul li a {
+  color: #000;
+}
+
 /* button border color inheritance */
 .btn-primary:hover, .btn-primary, .btn-primary:active, .btn-primary:focus {
   border-color: #bb0050 !important;
@@ -71,6 +76,9 @@ h4 {
   margin: 0 5%;
 }
 
+ul li {
+  list-style-type: none;
+}
 #table {
   display: none;
 }
