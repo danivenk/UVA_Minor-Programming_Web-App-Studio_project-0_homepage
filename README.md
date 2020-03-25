@@ -32,5 +32,5 @@ page2.html:
 page3.html:
   * the 3rd place page with summary of the characters and story
 
-feedback from Maarten Schröder:
-  * enter before comment
+Personal Touch:
+  * My personal touch for this application is the navigation bar that is generated from the javascript file
